@@ -4,38 +4,41 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <section
-      className="hero position-relative d-flex align-items-center vh-100"
+      className="hero position-relative d-flex align-items-center"
       style={{
         backgroundImage:
           "linear-gradient(#11221B99, #B68B5A33), url(/hero-bg.png)",
         backgroundSize: "cover",
         backgroundPosition: "center",
-        minHeight: "700px",
+        minHeight: "100vh",
+        paddingTop: "80px",
+        paddingBottom: "80px",
       }}
     >
-      <div className="container">
-        <div className="row w-100 flex align-items-center justify-content-center">
-          <div className="col-lg-10 col-md-10">
-            <h1 className="display-3 fw-bold text-white mb-4 text-center">
-              We Build Communities <br />
+      <div className="container text-center">
+        <div className="row justify-content-center align-items-center">
+          <div className="col-xl-8 col-lg-10 col-md-11 col-sm-12">
+            <h1 className="fw-bold text-white mb-4 display-5 display-sm-4 display-md-3 display-lg-2">
+              We Build Communities <br className="d-none d-md-block" />
               Worth Coming Home To
             </h1>
-            <p className="lead text-white mb-5 text-center">
+            <p className="lead text-white mb-5 px-2 px-md-0">
               Transforming land into lasting communities through strategic{" "}
-              <br />
+              <br className="d-none d-md-block" />
               partnerships and innovative development.
             </p>
-            <div className="d-flex flex-wrap align-items-center justify-content-center gap-3">
+            <div className="d-flex flex-column flex-sm-row justify-content-center gap-3">
               <Link
                 href="#projects"
-                className="btn text-white"
-                style={{
-                  background: "#B68B5A",
-                }}
+                className="btn text-white px-4 py-2 btn-view"
+                style={{ background: "#B68B5A" }}
               >
                 View Projects
               </Link>
-              <Link href="#contact" className="btn text-black bg-white">
+              <Link
+                href="#contact"
+                className="btn text-black bg-white px-4 py-2 btn-investors"
+              >
                 Join The Investors Group
               </Link>
             </div>

@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
 
 const AboutSignature = () => {
@@ -13,23 +12,23 @@ const AboutSignature = () => {
     >
       <div className="container py-5">
         <div className="row align-items-center">
-          <div className="col-lg-6 mb-5 mb-lg-0 pe-5">
+          <div className="col-lg-6 mb-4 mb-lg-0 pe-lg-5 text-center text-lg-start">
             <h2 className="section-title">About One Signature</h2>
-            <p className="fs-5 mb-4">
+            <p className="fs-5 mb-3">
               At <span className="fw-semibold">One Signature Developments</span>
               , we transform land into legacy.
             </p>
-            <p className="mb-4">
+            <p className="mb-3">
               We partner with experienced operators and capital partners to
               develop iconic, high-impact real estate: from build-to-sell
               townhomes to mixed-use epicenters.
             </p>
-            <p className="fs-6 mb-4">
+            <p className="fs-6 mb-3">
               Each project is a carefully crafted story of place, people, and
               purpose.
             </p>
             <p
-              className="mb-3  fw-medium"
+              className="mb-3 fw-medium"
               style={{
                 color: "#B68B5A",
               }}
@@ -38,7 +37,7 @@ const AboutSignature = () => {
             </p>
             <Link
               href="#projects"
-              className="btn btn-dark px-3 py-2"
+              className="btn btn-dark px-4 py-2"
               style={{
                 fontSize: "14px",
               }}
@@ -46,22 +45,30 @@ const AboutSignature = () => {
               Learn Our Story
             </Link>
           </div>
+
           <div className="col-lg-6">
-            <div className="position-relative">
+            <div
+              className="position-relative w-100"
+              style={{
+                backgroundImage: "url(/about-signature.png)",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                height: "50vh",
+              }}
+            >
               <div
-                className="position-absolute bottom-0 end-0 p-4 shadow"
-                style={{ zIndex: 2, width: "180px", background: "#B68B5A" }}
+                className="absolute-signature-box position-absolute absolute-signature-box"
+                style={{
+                  background: "#B68B5A",
+                  padding: "1rem",
+                  minWidth: "160px",
+                  zIndex: 2,
+                  boxShadow: "0 0.25rem 1rem rgba(0, 0, 0, 0.1)",
+                  borderRadius: "0.5rem",
+                }}
               >
-                <p className="mb-1 text-white fw-bold">$500M+</p>
-                <p className="mb-0 small text-white">Development Portfolio</p>
-              </div>
-              <div className="ratio ratio-4x3 shadow-lg">
-                <Image
-                  src="/about-signature.png"
-                  alt="Modern Signature Living Space"
-                  fill
-                  className="img-fluid object-fit-contain"
-                />
+                <p className="mb-1 text-white fw-bold fs-5">$500M+</p>
+                <p className="mb-0 text-white small">Development Portfolio</p>
               </div>
             </div>
           </div>

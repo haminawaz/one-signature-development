@@ -6,7 +6,7 @@ const AboutChandler = () => {
     <section className="py-5 py-md-6">
       <div className="container py-5">
         <div className="row align-items-center">
-          <div className="col-lg-6 mb-5 mb-lg-0 order-lg-2  ps-5">
+          <div className="col-lg-6 mb-5 mb-lg-0 order-lg-2 ps-5 text-center text-lg-start">
             <h2 className="section-title">About Chandler Chase</h2>
             <p className="mb-4">
               Chandler Chase is the founder of One Signature Developments, where

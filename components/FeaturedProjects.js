@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { MapPin, Building, Home } from "lucide-react";
 
 const projects = [
   {
@@ -155,7 +154,7 @@ const FeaturedProjects = () => {
         <div className="text-center mt-5">
           <Link
             href="#all-projects"
-            className="btn text-white px-4 py-3"
+            className="btn text-white px-4 py-3 btn-view"
             style={{
               background: "#B68B5A",
             }}
