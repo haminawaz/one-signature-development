@@ -22,6 +22,10 @@ const Navbar = () => {
     setNavOpen((prev) => !prev);
   };
 
+  const handleNavLinkClick = () => {
+    setNavOpen(false);
+  };
+
   const showBg = scrolled || navOpen;
 
   return (
@@ -34,7 +38,11 @@ const Navbar = () => {
       style={{ top: 0, transition: "all 0.3s ease-in-out", zIndex: 999 }}
     >
       <div className="container">
-        <Link href="/" className="navbar-brand d-flex align-items-end">
+        <Link
+          href="/"
+          onClick={handleNavLinkClick}
+          className="navbar-brand d-flex align-items-end"
+        >
           <Image src="/logo.svg" alt="Logo" width={60} height={80} />
           <Image src="/logo-2.svg" alt="Logo Text" width={140} height={60} />
         </Link>
@@ -63,12 +71,20 @@ const Navbar = () => {
         >
           <ul className="navbar-nav align-items-center gap-lg-3 text-center">
             <li className="nav-item">
-              <Link href="/" className="nav-link text-white">
+              <Link
+                href="/"
+                onClick={handleNavLinkClick}
+                className="nav-link text-white"
+              >
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link href="/about" className="nav-link text-white">
+              <Link
+                href="/about"
+                onClick={handleNavLinkClick}
+                className="nav-link text-white"
+              >
                 About
               </Link>
             </li>

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap");
 
 :root {
   --primary-color: #1a3a32;
@@ -149,6 +149,10 @@ h6 {
   font-size: 14px;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .backdrop-blur {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -174,10 +178,26 @@ h6 {
   color: #fff !important;
 }
 
+.about-hero {
+  height: 75vh;
+}
+
+.about-section {
+  margin-top: -25vh;
+}
+
+.about-hero-lead {
+  font-size: 25px;
+}
+
 @media (max-width: 1300px) {
   .absolute-signature-box {
     bottom: 3%;
     right: 1%;
+  }
+
+  .about-hero-lead {
+    font-size: 21px;
   }
 }
 
@@ -185,6 +205,18 @@ h6 {
   .absolute-signature-box {
     bottom: 8%;
     right: -4%;
+  }
+
+  .about-hero {
+    height: 50vh;
+  }
+
+  .about-section {
+    margin-top: -20vh;
+  }
+
+  .about-hero-lead {
+    font-size: 16px;
   }
 }
 
@@ -198,11 +230,31 @@ h6 {
   .absolute-signature-box {
     bottom: 5%;
   }
+
+  .about-hero {
+    height: 75vh;
+  }
+
+  .about-section-text {
+    font-size: 12px;
+  }
 }
 
-@media (max-width: 610px) {
+@media (max-width: 450px) {
   .absolute-signature-box {
     right: -2%;
     bottom: 8%;
+  }
+
+  .about-hero-lead {
+    font-size: 12px;
+  }
+
+  .about-hero {
+    height: 50vh;
+  }
+
+  .about-section-text {
+    font-size: 9px;
   }
 }
