@@ -23,6 +23,7 @@ body {
   font-family: "DM Sans", sans-serif !important;
   color: var(--text-color);
   background-color: var(--light-bg);
+  scroll-behavior: smooth !important;
 }
 
 h1,

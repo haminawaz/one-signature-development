@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect } from "react";
+import { usePathname } from "next/navigation";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -11,6 +12,16 @@ export default function ClientProviders({
 }: {
   children: React.ReactNode;
 }) {
+  const pathname = usePathname();
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }, 10);
+
+    return () => clearTimeout(timeout);
+  }, [pathname]);
+
   useEffect(() => {
     AOS.init({
       duration: 200,

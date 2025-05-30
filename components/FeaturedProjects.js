@@ -145,7 +145,7 @@ const FeaturedProjects = () => {
                 </div>
                 <div className="card-footer bg-white border-0 pb-4">
                   <Link
-                    href={`#project-${project.id}`}
+                    href="#projects"
                     className="btn btn-dark w-100"
                   >
                     View Details
@@ -158,7 +158,7 @@ const FeaturedProjects = () => {
 
         <div className="text-center mt-5">
           <Link
-            href="#all-projects"
+            href="#projects"
             className="btn text-white px-4 py-3 btn-view"
             style={{
               background: "#B68B5A",
