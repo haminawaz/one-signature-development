@@ -12,7 +12,7 @@ const Hero = () => {
         <div className="row flex align-items-center justify-content-center">
           <div>
             <h1
-              className="display-3 fw-bold text-white mb-4 text-center"
+              className="display-3 fw-bold text-white mb-4 text-center mt-5 mt-sm-0"
               data-aos="fade-down"
               data-aos-delay="400"
             >
