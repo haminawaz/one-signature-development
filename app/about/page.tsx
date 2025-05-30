@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import AboutSection from "./components/AboutSection";
 import OurMembers from "./components/OurMembers";
 import Ready from "./components/Ready";
+import Schedule from "./components/Schedule";
 
 export default function About() {
   return (
@@ -13,6 +14,7 @@ export default function About() {
       <AboutSection />
       <OurMembers />
       <Ready />
+      {/* <Schedule /> */}
     </main>
   );
 }

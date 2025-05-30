@@ -1,16 +1,10 @@
-"use client";
-
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import "./globals.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-import type { Metadata } from "next";
-import Script from "next/script";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import type { Metadata } from "next";
+import Script from "next/script";
+import ClientProviders from "./ClientProviders";
 
-const metadata: Metadata = {
+export const metadata: Metadata = {
   title: "One Signature Developments",
   description: "We Build Communities Worth Coming Home To",
 };
@@ -20,22 +14,31 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  useEffect(() => {
-    AOS.init({
-      duration: 200,
-      offset: 120,
-      easing: "ease-in-out",
-      once: true,
-    });
-  }, []);
-
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://assets.calendly.com/assets/external/widget.css"
+        />
+      </head>
       <body>
         <Navbar />
-        {children}
+
+        <ClientProviders>{children}</ClientProviders>
+
         <Footer />
-        <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" />
+
+        <Script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+          strategy="lazyOnload"
+        />
+
+        <Script
+          src="https://assets.calendly.com/assets/external/widget.js"
+          type="text/javascript"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
