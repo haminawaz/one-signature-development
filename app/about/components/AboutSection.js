@@ -6,7 +6,7 @@ const AboutSection = () => {
     <section className="position-relative about-section">
       <div className="container">
         <div className="row align-items-center justify-content-center">
-          <div className="mb-5">
+          <div className="mb-5" data-aos="fade-up" data-aos-delay="400">
             <Image
               src="/about/about-hero.jpg"
               alt="About Image"

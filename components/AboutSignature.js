@@ -9,10 +9,16 @@ const AboutSignature = () => {
       style={{
         background: "#F8F1E5",
       }}
+      data-aos="slide-left"
+      data-aos-duration="500"
     >
       <div className="container py-5">
         <div className="row align-items-center">
-          <div className="col-lg-6 mb-4 mb-lg-0 pe-lg-5 text-center text-lg-start">
+          <div
+            className="col-lg-6 mb-4 mb-lg-0 pe-lg-5 text-center text-lg-start"
+            data-aos="fade-right"
+            data-aos-delay="700"
+          >
             <h2 className="section-title">About One Signature</h2>
             <p className="fs-5 mb-3">
               At <span className="fw-semibold">One Signature Developments</span>
@@ -41,6 +47,8 @@ const AboutSignature = () => {
               style={{
                 fontSize: "14px",
               }}
+              data-aos="fade-up"
+              data-aos-delay="900"
             >
               Learn Our Story
             </Link>
@@ -55,6 +63,8 @@ const AboutSignature = () => {
                 backgroundPosition: "center",
                 height: "50vh",
               }}
+              data-aos="fade-left"
+              data-aos-delay="700"
             >
               <div
                 className="absolute-signature-box position-absolute absolute-signature-box"
@@ -67,7 +77,7 @@ const AboutSignature = () => {
                   borderRadius: "0.5rem",
                 }}
               >
-                <p className="mb-1 text-white fw-bold fs-5">$500M+</p>
+                <p className="mb-1 text-white fw-bold fs-5">$25M+</p>
                 <p className="mb-0 text-white small">Development Portfolio</p>
               </div>
             </div>

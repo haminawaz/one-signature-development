@@ -22,12 +22,20 @@ const Hero = () => {
               We Build Communities <br className="d-none d-md-block" />
               Worth Coming Home To
             </h1>
-            <p className="lead text-white mb-5 px-2 px-md-0">
+            <p
+              className="lead text-white mb-5 px-2 px-md-0"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               Transforming land into lasting communities through strategic{" "}
               <br className="d-none d-md-block" />
               partnerships and innovative development.
             </p>
-            <div className="d-flex flex-column flex-sm-row justify-content-center gap-3">
+            <div
+              className="d-flex flex-column flex-sm-row justify-content-center gap-3"
+              data-aos="zoom-in"
+              data-aos-delay="500"
+            >
               <Link
                 href="#projects"
                 className="btn text-white px-4 py-2 btn-view"

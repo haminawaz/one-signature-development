@@ -43,7 +43,12 @@ const InvestmentHighlights = () => {
             <h2 className="section-title">Investment Highlights</h2>
             <div className="mt-5">
               {investmentPoints.map((point, index) => (
-                <div key={index} className="d-flex mb-4 align-items-start">
+                <div
+                  key={index}
+                  className="d-flex mb-4 align-items-start"
+                  data-aos="fade-up"
+                  data-aos-delay={`${300 + index * 100}`}
+                >
                   <div className="me-2 mt--1">
                     <CircleCheck fill="#B68B5A" color="#fff" size={38} />
                   </div>
@@ -56,19 +61,32 @@ const InvestmentHighlights = () => {
             </div>
           </div>
 
-          <div className="col-lg-6 mt-5 mt-lg-0">
-            <div className="p-3 rounded-3" style={{
-              background: "#11221B"
-            }}>
-              <h3 className="mb-4 text-center" style={{
-                color:"#B68B5A"
-              }}>Our Brand Values</h3>
+          <div
+            className="col-lg-6 mt-5 mt-lg-0"
+            data-aos="fade-left"
+            data-aos-delay="400"
+          >
+            <div
+              className="p-3 rounded-3"
+              style={{
+                background: "#11221B",
+              }}
+            >
+              <h3
+                className="mb-4 text-center"
+                style={{
+                  color: "#B68B5A",
+                }}
+              >
+                Our Brand Values
+              </h3>
               <div className="d-flex justify-content-center align-items-center">
-              <p className="text-white text-center mb-4 fs-14 col-lg-4">
-                  Build With Legacy in Mind Own It Like It’s Yours Deliver More
-                Than Promised Real Relationships Only Innovate Intelligently
-              </p>
-            </div>
+                <p className="text-white text-center mb-4 fs-14 col-lg-4">
+                  Build With Legacy in Mind <br /> Own It Like It’s Yours <br />{" "}
+                  Deliver More Than Promised <br /> Real Relationships Only{" "}
+                  <br /> Innovate Intelligently
+                </p>
+              </div>
             </div>
           </div>
         </div>

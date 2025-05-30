@@ -16,6 +16,10 @@ const Contact = () => {
             <div
               className="rounded-circle bg-secondary mb-5"
               style={{
+                backgroundImage: "url(/owner.png)",
+                backgroundSize: "cover",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center",
                 width: "120px",
                 height: "120px",
               }}
@@ -24,8 +28,8 @@ const Contact = () => {
               className="fs-4 fst-italic mb-2"
               style={{ fontFamily: "Playfair Display" }}
             >
-              “We dont just build - we create destinations. Welcome to the
-              future of community!”
+              “We don’t just build—we create destinations. Live. Work. Play.
+              That’s the future of community!”
             </p>
             <p className="fw-bold">— Chandler Chase, Founder & CEO</p>
           </div>

@@ -11,7 +11,6 @@ const projects = [
     image: "/project-1.png",
     strategy: "BTR Townhomes",
     market: "Florence, SC",
-    holdPeriod: "5 Years",
     irr: "21",
     comingSoon: true,
   },
@@ -21,7 +20,6 @@ const projects = [
     image: "/project-2.png",
     strategy: "BTR Townhomes",
     market: "Charlotte, NC",
-    holdPeriod: "18 months",
     irr: "20",
     comingSoon: true,
   },
@@ -31,7 +29,6 @@ const projects = [
     image: "/project-3.png",
     strategy: "BTS Infill",
     market: "Portsmouth, VA",
-    holdPeriod: "24 months",
     irr: "17",
     comingSoon: true,
   },
@@ -41,7 +38,6 @@ const projects = [
     image: "/project-4.png",
     strategy: "Infill Mixed-Use",
     market: "South Bend, IN",
-    holdPeriod: "12 months",
     irr: "23",
     comingSoon: false,
   },
@@ -51,7 +47,6 @@ const projects = [
     image: "/project-5.png",
     strategy: "BTS SFH",
     market: "Sumter, SC",
-    holdPeriod: "6-9 months",
     irr: "18-22",
     comingSoon: false,
   },
@@ -61,7 +56,6 @@ const projects = [
     image: "/project-6.png",
     strategy: "BTS SFH",
     market: "Marion, SC",
-    holdPeriod: "6-9 months",
     irr: "16",
     comingSoon: false,
   },
@@ -87,14 +81,21 @@ const FeaturedProjects = () => {
         </div>
 
         <div className="row g-4">
-          {projects.map((project) => (
-            <div key={project.id} className="col-md-6 col-lg-4 mb-4">
+          {projects.map((project, idx) => (
+            <div
+              key={project.id}
+              className="col-md-6 col-lg-4 mb-4"
+              data-aos="fade-up"
+              data-aos-delay={`${300 + idx * 100}`}
+            >
               <div className="card h-100 shadow-sm">
                 <div className="position-relative">
                   {project.comingSoon && (
                     <div
                       className="badge rounded-pill px-3 py-2 position-absolute bg-black z-2"
                       style={{ top: "10px", left: "10px" }}
+                      data-aos="zoom-in"
+                      data-aos-delay={`${400 + idx * 100}`}
                     >
                       Coming Soon
                     </div>
@@ -106,6 +107,8 @@ const FeaturedProjects = () => {
                       right: "10px",
                       background: "#B68B5A",
                     }}
+                    data-aos="zoom-in"
+                    data-aos-delay={`${500 + idx * 100}`}
                   >
                     {project.irr}% IRR
                   </div>
@@ -114,6 +117,8 @@ const FeaturedProjects = () => {
                     style={{
                       height: "220px",
                     }}
+                    data-aos="zoom-in"
+                    data-aos-delay={`${600 + idx * 100}`}
                   >
                     <Image
                       src={project.image}
@@ -123,19 +128,19 @@ const FeaturedProjects = () => {
                     />
                   </div>
                 </div>
-                <div className="card-body p-4">
+                <div
+                  className="card-body p-4"
+                  data-aos="fade-in"
+                  data-aos-delay={`${500 + idx * 100}`}
+                >
                   <h5 className="card-title fw-bold mb-3">{project.title}</h5>
                   <p className="mb-1 d-flex align-items-center justify-content-between">
                     <span>Stragety:</span>
                     <span>{project.strategy}</span>
                   </p>
                   <p className="mb-1 d-flex align-items-center justify-content-between">
-                    <span>market:</span>
+                    <span>Market:</span>
                     <span>{project.market}</span>
-                  </p>
-                  <p className="mb-1 d-flex align-items-center justify-content-between">
-                    <span>Hold Price:</span>
-                    <span>{project.holdPeriod}</span>
                   </p>
                 </div>
                 <div className="card-footer bg-white border-0 pb-4">

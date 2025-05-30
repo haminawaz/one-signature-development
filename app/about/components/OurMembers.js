@@ -48,7 +48,7 @@ const members = [
   },
 ];
 
-const WhatWeDo = () => {
+const OurMembers = () => {
   return (
     <section id="projects" className="py-5 py-md-6 bg-white">
       <div className="container py-5">
@@ -61,14 +61,18 @@ const WhatWeDo = () => {
         </div>
 
         <div className="row g-4">
-          {members.map((member) => (
-            <div key={member.id} className="col-md-6 col-lg-4 mb-4">
+          {members.map((member, index) => (
+            <div key={member.id} className="col-md-6 col-lg-4 mb-4"
+            data-aos="flip-left"
+              data-aos-delay={`${500 + index * 100}`}>
               <div className="card h-100 bg-transparent h-100 border-0 cursor-pointer shadow-none">
                 <div
                   className="card-img-top position-relative w-100"
                   style={{
                     height: "300px",
                   }}
+                  data-aos="zoom-in"
+                    data-aos-delay={`${500 + index * 100}`}
                 >
                   <Image
                     src={member.image}
@@ -91,4 +95,4 @@ const WhatWeDo = () => {
   );
 };
 
-export default WhatWeDo;
+export default OurMembers;

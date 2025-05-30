@@ -1,3 +1,8 @@
+"use client";
+
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import type { Metadata } from "next";
@@ -5,7 +10,7 @@ import Script from "next/script";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-export const metadata: Metadata = {
+const metadata: Metadata = {
   title: "One Signature Developments",
   description: "We Build Communities Worth Coming Home To",
 };
@@ -15,6 +20,15 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  useEffect(() => {
+    AOS.init({
+      duration: 200,
+      offset: 120,
+      easing: "ease-in-out",
+      once: true,
+    });
+  }, []);
+
   return (
     <html lang="en">
       <body>

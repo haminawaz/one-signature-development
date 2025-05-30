@@ -11,10 +11,14 @@ const Ready = () => {
     >
       <div className="container py-5 d-flex flex-column justify-content-center align-items-center">
         <div className="text-center mb-5">
-          <h2 className="section-title centered fw-bolder">
+          <h2
+            className="section-title centered fw-bolder"
+            data-aos="fade-up"
+            data-aos-delay="700"
+          >
             Ready to get started?
           </h2>
-          <p className="mt-4">
+          <p className="mt-4" data-aos="fade-down" data-aos-delay="700">
             Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
             suscipit laboriosam, nisi <br /> ut aliquid ex ea commodi
             consequatur. Quis autem vel eum iure reprehenderit qui in ea

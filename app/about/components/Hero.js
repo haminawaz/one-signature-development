@@ -11,7 +11,11 @@ const Hero = () => {
       <div className="container">
         <div className="row flex align-items-center justify-content-center">
           <div>
-            <h1 className="display-3 fw-bold text-white mb-4 text-center">
+            <h1
+              className="display-3 fw-bold text-white mb-4 text-center"
+              data-aos="fade-down"
+              data-aos-delay="400"
+            >
               About Us
             </h1>
             <p className="about-hero-lead text-white mb-5 fw-light text-center">

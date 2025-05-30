@@ -3,7 +3,7 @@
 import React from "react";
 import Hero from "./components/Hero";
 import AboutSection from "./components/AboutSection";
-import WhatWeDo from "./components/WhatWeDo";
+import OurMembers from "./components/OurMembers";
 import Ready from "./components/Ready";
 
 export default function About() {
@@ -11,7 +11,7 @@ export default function About() {
     <main>
       <Hero />
       <AboutSection />
-      <WhatWeDo />
+      <OurMembers />
       <Ready />
     </main>
   );
