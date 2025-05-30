@@ -43,7 +43,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="col-sm-6 col-lg-2">
+          <div className="col-sm-6 mb-md-0 mb-5 col-lg-2">
             <h6 className="mb-3">Quick Links</h6>
             <ul className="list-unstyled mb-0">
               <li className="mb-1">
