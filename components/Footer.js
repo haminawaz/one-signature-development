@@ -48,7 +48,7 @@ const Footer = () => {
             <ul className="list-unstyled mb-0">
               <li className="mb-1">
                 <Link
-                  href="#about"
+                  href="/#about"
                   className="text-white opacity-75 text-decoration-none"
                 >
                   About Us
@@ -56,7 +56,7 @@ const Footer = () => {
               </li>
               <li className="mb-1">
                 <Link
-                  href="#services"
+                  href="/#services"
                   className="text-white opacity-75 text-decoration-none"
                 >
                   Services
@@ -64,7 +64,7 @@ const Footer = () => {
               </li>
               <li className="mb-1">
                 <Link
-                  href="#projects"
+                  href="/#projects"
                   className="text-white opacity-75 text-decoration-none"
                 >
                   Projects
@@ -72,7 +72,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="#contact"
+                  href="/#contact"
                   className="text-white opacity-75 text-decoration-none"
                 >
                   Contact

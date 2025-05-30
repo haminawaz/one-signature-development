@@ -42,7 +42,7 @@ const AboutSignature = () => {
               We {`don't`} pitch. We partner. We deliver.
             </p>
             <Link
-              href="#projects"
+              href="/about"
               className="btn btn-dark px-4 py-2"
               style={{
                 fontSize: "14px",

@@ -43,7 +43,7 @@ const services = [
 
 const WhatWeDo = () => {
   return (
-    <section className="py-5 py-md-6">
+    <section className="py-5 py-md-6" id="services">
       <div className="container py-5">
         <div className="text-center mb-5 w-100 flex align-items-center justify-content-center">
           <h2 className="section-title centered">What We Do</h2>

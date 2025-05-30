@@ -16,7 +16,9 @@ export default function ClientProviders({
 
   useEffect(() => {
     const timeout = setTimeout(() => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      if (!window.location.hash) {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
     }, 10);
 
     return () => clearTimeout(timeout);

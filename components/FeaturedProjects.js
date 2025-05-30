@@ -144,10 +144,7 @@ const FeaturedProjects = () => {
                   </p>
                 </div>
                 <div className="card-footer bg-white border-0 pb-4">
-                  <Link
-                    href="#projects"
-                    className="btn btn-dark w-100"
-                  >
+                  <Link href="#projects" className="btn btn-dark w-100">
                     View Details
                   </Link>
                 </div>
