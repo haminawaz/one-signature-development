@@ -2,8 +2,7 @@
 
 import React from "react";
 import { InlineWidget } from "react-calendly";
-
-const calendlyUrl = process.env.NEXT_PUBLIC_CALENDLY_URL;
+const calendlyUrl = process.env.NEXT_PUBLIC_CALENDLY_URL || "";
 
 const Schedule = () => {
 

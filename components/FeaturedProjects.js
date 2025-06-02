@@ -4,7 +4,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { PopupButton } from "react-calendly";
-const calendlyUrl = process.env.NEXT_PUBLIC_CALENDLY_URL;
+const calendlyUrl = process.env.NEXT_PUBLIC_CALENDLY_URL || "";
 
 const projects = [
   {
