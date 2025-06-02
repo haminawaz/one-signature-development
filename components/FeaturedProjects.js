@@ -1,8 +1,10 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { PopupButton } from "react-calendly";
+const calendlyUrl = process.env.NEXT_PUBLIC_CALENDLY_URL;
 
 const projects = [
   {
@@ -144,9 +146,21 @@ const FeaturedProjects = () => {
                   </p>
                 </div>
                 <div className="card-footer bg-white border-0 pb-4">
-                  <Link href="#projects" className="btn btn-dark w-100">
-                    View Details
-                  </Link>
+                  <PopupButton
+                    url={calendlyUrl}
+                    rootElement={
+                      typeof window !== "undefined" ? document.body : undefined
+                    }
+                    className="btn btn-dark w-100"
+                    text="View Details"
+                    pageSettings={{
+                      hideLandingPageDetails: 1,
+                      hideGdprBanner: 1,
+                      hideEventTypeDetails: 1,
+                      hideGdprBanner: 1,
+                      primaryColor: "#B68B5A",
+                    }}
+                  />
                 </div>
               </div>
             </div>

@@ -14,7 +14,7 @@ export default function About() {
       <AboutSection />
       <OurMembers />
       <Ready />
-      {/* <Schedule /> */}
+      <Schedule />
     </main>
   );
 }

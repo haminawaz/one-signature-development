@@ -191,6 +191,25 @@ h6 {
   font-size: 25px;
 }
 
+.calendly-overlay {
+  width: 100vw !important;
+  height: 100vh !important;
+}
+
+.schedule .calendly-inline-widget {
+  min-width: 100% !important;
+  height: 100vh !important;
+}
+
+.calendly-overlay .calendly-popup {
+  width: 100% !important;
+  height: 100% !important;
+  min-width: auto !important;
+  max-width: none !important;
+  min-height: auto !important;
+  max-height: none !important;
+}
+
 @media (max-width: 1300px) {
   .absolute-signature-box {
     bottom: 3%;
