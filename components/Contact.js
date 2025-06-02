@@ -82,7 +82,6 @@ const Contact = () => {
     >
       <div className="container py-5">
         <div className="row justify-content-center">
-          {/* Left Column: Quote & Avatar */}
           <div
             className="col-12 mb-5 mb-md-0 d-flex flex-column justify-content-center align-items-center text-center"
             data-aos="fade-right"
@@ -91,14 +90,16 @@ const Contact = () => {
             <div
               className="rounded-circle mb-4"
               style={{
-                backgroundImage: "url(/owner.png)",
-                backgroundSize: "cover",
+                backgroundImage: "url(/owner-2.png)",
+                backgroundSize: "contain",
                 backgroundRepeat: "no-repeat",
-                backgroundPosition: "center",
+                backgroundPosition: "right center",
                 width: "120px",
                 height: "120px",
+                backgroundColor: "#000",
               }}
             ></div>
+
             <p
               className="col-12 col-lg-8 fs-4 fst-italic mb-2 px-3"
               style={{ fontFamily: "Playfair Display" }}

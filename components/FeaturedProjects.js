@@ -36,7 +36,7 @@ const projects = [
     id: 4,
     title: "Stanfield",
     image: "/project-4.png",
-    strategy: "Infill Mixed-Use",
+    strategy: "BTS SFH",
     market: "South Bend, IN",
     irr: "23",
     comingSoon: false,
@@ -75,7 +75,7 @@ const FeaturedProjects = () => {
           <h2 className="section-title centered">Featured Projects</h2>
           <p className="mt-4">
             Proven track record of delivering exceptional returns across diverse
-            markets and <br />
+            markets and <br className="d-none d-md-block" />
             asset classes.
           </p>
         </div>

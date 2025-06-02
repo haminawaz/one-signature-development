@@ -16,12 +16,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <link
-          rel="stylesheet"
-          href="https://assets.calendly.com/assets/external/widget.css"
-        />
-      </head>
       <body>
         <Navbar />
 
@@ -32,12 +26,6 @@ export default function RootLayout({
         <Script
           src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
           strategy="lazyOnload"
-        />
-
-        <Script
-          src="https://assets.calendly.com/assets/external/widget.js"
-          type="text/javascript"
-          strategy="afterInteractive"
         />
       </body>
     </html>

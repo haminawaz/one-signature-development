@@ -33,13 +33,13 @@ const AboutChandler = () => {
           >
             <div className="ratio ratio-16x9 shadow-lg rounded-3">
               <div style={{ background: "#C4C4C4" }} className="rounded-3">
-                {/* <Image
-                src="/chandler-community.jpg"
-                alt="Chandler Chase Community"
-                fill
-                style={{ objectFit: "cover", background: "#C4C4C4" }}
-                className="img-fluid"
-              /> */}
+                <Image
+                  src="/owner.png"
+                  alt="Chandler Chase Community"
+                  fill
+                  style={{ objectFit: "cover", background: "#C4C4C4" }}
+                  className="img-fluid rounded-3"
+                />
               </div>{" "}
             </div>
           </div>

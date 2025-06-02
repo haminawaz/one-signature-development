@@ -73,7 +73,7 @@ const InvestmentHighlights = () => {
               }}
             >
               <h3
-                className="mb-4 text-center"
+                className="mb-lg-4 text-center"
                 style={{
                   color: "#B68B5A",
                 }}
@@ -81,11 +81,13 @@ const InvestmentHighlights = () => {
                 Our Brand Values
               </h3>
               <div className="d-flex justify-content-center align-items-center">
-                <p className="text-white text-center mb-4 fs-14 col-lg-4">
-                  Build With Legacy in Mind <br /> Own It Like It’s Yours <br />{" "}
-                  Deliver More Than Promised <br /> Real Relationships Only{" "}
-                  <br /> Innovate Intelligently
-                </p>
+                <ul className="list-unstyled text-white text-center mb-4 fs-14 col-lg-4">
+                  <li className="text-nowrap">Deliver More Than Promised</li>
+                  <li className="text-nowrap">Build With Legacy in Mind</li>
+                  <li className="text-nowrap">Real Relationships Only</li>
+                  <li className="text-nowrap">Own It Like It’s Yours</li>
+                  <li className="text-nowrap">Innovate Intelligently</li>
+                </ul>
               </div>
             </div>
           </div>

@@ -49,7 +49,7 @@ const WhatWeDo = () => {
           <h2 className="section-title centered">What We Do</h2>
           <p className="mt-4">
             Comprehensive real estate development solutions across multiple
-            asset classes <br /> and markets.
+            asset classes <br className="d-none d-md-block" /> and markets.
           </p>
         </div>
 
