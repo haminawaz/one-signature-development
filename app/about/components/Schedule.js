@@ -7,7 +7,7 @@ const calendlyUrl = process.env.NEXT_PUBLIC_CALENDLY_URL || "";
 const Schedule = () => {
 
   return (
-    <div className="schedule about-section px-sm-5">
+    <div className="schedule about-section px-sm-5" id="schedule">
         <InlineWidget
           url={calendlyUrl}
           open={true}
