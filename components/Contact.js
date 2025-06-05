@@ -56,40 +56,45 @@ const Contact = () => {
               data-aos-delay="400"
             >
               <p className="lead fw-bold text-center mb-4">Get In Touch</p>
-              <div
-                className="d-flex flex-column flex-sm-row justify-content-between mb-3"
-                data-aos="fade-up"
-                data-aos-delay="600"
-              >
-                <p className="fs-14 mb-2 mb-sm-0 d-flex align-items-center">
-                  <Mail size={20} color="#B68B5A" className="me-2" />
-                  info@onesignaturedevelopments.com
-                </p>
-                <p className="fs-14 mb-0 d-flex align-items-center">
-                  <Globe size={20} color="#B68B5A" className="me-2" />
-                  www.onesignaturedevelopments.com
-                </p>
+              <div className="row mb-3" data-aos="fade-up" data-aos-delay="600">
+                <div className="col-12 col-sm-6 mb-3 mb-sm-0">
+                  <p className="fs-14 mb-0 d-flex align-items-center">
+                    <Mail size={20} color="#B68B5A" className="me-2" />
+                    info@onesignaturedevelopments.com
+                  </p>
+                </div>
+                <div className="col-12 col-sm-6">
+                  <p className="fs-14 mb-0 d-flex align-items-center">
+                    <Globe size={20} color="#B68B5A" className="me-2" />
+                    www.onesignaturedevelopments.com
+                  </p>
+                </div>
               </div>
-              <div className="mb-3" data-aos="fade-up" data-aos-delay="700">
+              <div className="row mb-3" data-aos="fade-up" data-aos-delay="600">
+                <div className="col-12 col-sm-6 mb-3 mb-sm-0">
+                  <p className="fs-14 mb-0 d-flex align-items-center">
+                    <Linkedin size={20} color="#B68B5A" className="me-2" />
+                    Connect on LinkedIn
+                  </p>
+                </div>
+                <div className="col-12 col-sm-6">
+                  <p className="fs-14 mb-0 d-flex align-items-center">
+                    <DollarSign size={20} color="#B68B5A" className="me-2" />
+                    <Link
+                      href="/about#schedule"
+                      className="fs-14 d-flex align-items-center text-black text-decoration-none"
+                    >
+                      Invest with us
+                    </Link>
+                  </p>
+                </div>
+              </div>
+
+              <div data-aos="fade-up" data-aos-delay="700">
                 <p className="fs-14 mb-0 d-flex align-items-center">
                   <MapPin size={20} color="#B68B5A" className="me-2" />
                   Based in Charlotte | Projects across SC, NC, VA, IN
                 </p>
-              </div>
-              <div className="mb-3" data-aos="fade-up" data-aos-delay="700">
-                <p className="fs-14 mb-0 d-flex align-items-center">
-                  <Linkedin size={20} color="#B68B5A" className="me-2" />
-                  Connect on LinkedIn
-                </p>
-              </div>
-              <div className="d-flex align-items-center" data-aos="fade-up" data-aos-delay="700">
-                <DollarSign size={20} color="#B68B5A" className="me-2" />
-                <Link
-                  href="/about#schedule"
-                  className="fs-14 mb-2 mb-sm-0 d-flex align-items-center text-black"
-                >
-                  Invest with us under the website
-                </Link>
               </div>
             </div>
           </div>
